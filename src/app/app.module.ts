@@ -13,6 +13,7 @@ import {ImpressumComponent} from './impressum/impressum.component';
 import {HaftungsausschlussComponent} from './haftungsausschluss/haftungsausschluss.component';
 import {DatenschutzComponent} from './datenschutz/datenschutz.component';
 import { GiHeaderComponent } from './gi-header/gi-header.component';
+import { GiFooterComponent } from './gi-footer/gi-footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -26,7 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImpressumComponent,
     HaftungsausschlussComponent,
     DatenschutzComponent,
-    GiHeaderComponent
+    GiHeaderComponent,
+    GiFooterComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,10 @@ import {HaftungsausschlussComponent} from './haftungsausschluss/haftungsausschlu
 import {DatenschutzComponent} from './datenschutz/datenschutz.component';
 import { GiHeaderComponent } from './gi-header/gi-header.component';
 import { GiFooterComponent } from './gi-footer/gi-footer.component';
+import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
+import { PortaitComponent } from './portait/portait.component';
+import { ProjekteComponent } from './projekte/projekte.component';
+import { DownloadFolderComponent } from './download-folder/download-folder.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,7 +32,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     HaftungsausschlussComponent,
     DatenschutzComponent,
     GiHeaderComponent,
-    GiFooterComponent
+    GiFooterComponent,
+    UeberUnsComponent,
+    PortaitComponent,
+    ProjekteComponent,
+    DownloadFolderComponent
   ],
   imports: [
     BrowserModule,

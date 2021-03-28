@@ -17,7 +17,6 @@ import { GiFooterComponent } from './gi-footer/gi-footer.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { PortaitComponent } from './portait/portait.component';
 import { ProjekteComponent } from './projekte/projekte.component';
-import { DownloadFolderComponent } from './download-folder/download-folder.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,7 +35,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     UeberUnsComponent,
     PortaitComponent,
     ProjekteComponent,
-    DownloadFolderComponent
   ],
   imports: [
     BrowserModule,

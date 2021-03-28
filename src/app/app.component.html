@@ -1,10 +1,11 @@
-<body>
-  <header>
+<body style="display: flex; flex-direction: column">
+  <header class="header">
     <gi-header></gi-header>
   </header>
-  <div class="wrap">
-    <router-outlet></router-outlet>
+  <div style="flex-grow: 1">
+       <router-outlet ></router-outlet>
   </div>
+
   <footer>
     <gi-footer></gi-footer>
   </footer>

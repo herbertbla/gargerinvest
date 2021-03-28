@@ -8,7 +8,6 @@ import {DatenschutzComponent} from "./datenschutz/datenschutz.component";
 import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 import {PortaitComponent} from "./portait/portait.component";
 import {ProjekteComponent} from "./projekte/projekte.component";
-import {DownloadFolderComponent} from "./download-folder/download-folder.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,7 +18,6 @@ const routes: Routes = [
   { path: 'projekte', component:  ProjekteComponent },
   { path: 'impressum', component:  ImpressumComponent },
   { path: 'haftungsausschluss', component:  HaftungsausschlussComponent},
-  { path: 'download', component:  DownloadFolderComponent},
   { path: 'datenschutz', component:  DatenschutzComponent},
 ];
 

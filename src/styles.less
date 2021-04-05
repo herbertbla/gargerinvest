@@ -36,11 +36,19 @@ h3, h2 {
   &:extend(.gspmenuitem-small);
   font-weight: bold;
 }
-
-h2, h3 {
+.h-base {
   font-family: Source Sans Pro semibold;
   color: rgb(0,65,55);
 }
+h2 {
+  &:extend(.h-base);
+  font-size: 2vw;
+}
+h3 {
+  &:extend(.h-base);
+  font-size: 1.5vw;
+}
+
 
 div {
   font-family:  Source Sans Pro regular;

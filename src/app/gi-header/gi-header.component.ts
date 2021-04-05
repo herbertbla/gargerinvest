@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from "@angular/common";
 
 @Component({
   selector: 'gi-header',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GiHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+  getClass(menuItem: string) : string
+  {
+      let retClass =  'gspmenuitem';
+      if (this.location.path().includes(menuItem)) {
+          retClass = 'gspmenuitem-active';
+      }
+
+      return retClass;
   }
 
 }

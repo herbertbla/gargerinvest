@@ -1,2 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 
+.headline {
+  font-family: 'Source Sans Pro semibold';
+  color: rgb(0,68,57);
+}
+
+.lauftext, li {
+  font-family: "Source Sans Pro regular";
+}
+
+h3, h2 {
+  color: rgb(0,68,57);
+}
+
+.gspmenuitem-base {
+  color: white;
+  font-family: "Source Sans Pro regular";
+}
+.gspmenuitem {
+  &:extend(.gspmenuitem-base);
+  font-size: 1.5em;
+}
+.gspmenuitem-active {
+  &:extend(.gspmenuitem);
+  font-weight: bold;
+}
+
+.gspmenuitem-small {
+  &:extend(.gspmenuitem-base);
+  font-size: 1em;
+}
+
+
+.gspmenuitem-small-active {
+  &:extend(.gspmenuitem-small);
+  font-weight: bold;
+}

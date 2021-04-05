@@ -1,11 +1,11 @@
 <nav class="navbar navbar-default header" style="margin-bottom: 0">
   <div class="container-fluid header">
-    <ul class="nav navbar-nav header">
-      <li><a href="#/home" ><span class="gspmenuitem">HOME</span></a></li>
-      <li> <a href="#/ueberuns"><span class="gspmenuitem">ÜBER UNS</span></a></li>
-      <li > <a href="#/portrait"><span class="gspmenuitem">PORTRAIT</span></a></li>
-      <li><a href="#/projekte"><span class="gspmenuitem">PROJEKTE</span></a></li>
-      <li ><a href="#/kontakt"><span class="gspmenuitem">KONTAKT</span></a></li>
+    <ul class="nav navbar-nav header" style="padding-left: 7vw">
+      <li><a href="#/home" ><span [ngClass]="getClass('home')">HOME</span></a></li>
+      <li> <a href="#/ueberuns"><span [ngClass]="getClass('ueberuns')">ÜBER UNS</span></a></li>
+      <li > <a href="#/portrait"><span [ngClass]="getClass('portrait')">PORTRAIT</span></a></li>
+      <li><a href="#/projekte"><span [ngClass]="getClass('projekte')">PROJEKTE</span></a></li>
+      <li ><a href="#/kontakt"><span [ngClass]="getClass('kontakt')">KONTAKT</span></a></li>
 
     </ul>
     <ul class="nav navbar-nav navbar-right">

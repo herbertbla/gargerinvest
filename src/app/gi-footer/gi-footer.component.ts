@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from "@angular/common";
 
 @Component({
   selector: 'gi-footer',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GiFooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+
+  getClass(menuItem: string) : string
+  {
+    let retClass =  'gspmenuitem-small';
+    if (this.location.path().includes(menuItem)) {
+      retClass = 'gspmenuitem-small-active';
+    }
+
+    return retClass;
   }
 
 }

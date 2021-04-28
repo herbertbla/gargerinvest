@@ -1,13 +1,13 @@
-<body style="display: flex; flex-direction: column">
+<body style="display: flex; flex-direction: column; min-height: 100vh">
   <header class="header">
     <gi-header></gi-header>
   </header>
-  <div style="flex-grow: 1" class="lauftext">
+  <div style="flex:4" class="lauftext">
        <router-outlet ></router-outlet>
   </div>
 
-  <footer>
+  <footer >
     <gi-footer></gi-footer>
   </footer>
-  <div id="lastline">   <div style="color: white" class="lauftext">©2021 alle Rechte vorbehalten</div> </div>
+  <div id="lastline" style="margin-bottom: auto">   <div style="color: white; margin-left: 8vw;" class="lauftext">©2021 alle Rechte vorbehalten</div> </div>
 </body>

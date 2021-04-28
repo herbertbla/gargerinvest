@@ -8,6 +8,7 @@ import {DatenschutzComponent} from "./datenschutz/datenschutz.component";
 import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 import {PortaitComponent} from "./portait/portait.component";
 import {ProjekteComponent} from "./projekte/projekte.component";
+import {InvestGrundComponent} from "./invest-grund/invest-grund.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'impressum', component:  ImpressumComponent },
   { path: 'haftungsausschluss', component:  HaftungsausschlussComponent},
   { path: 'datenschutz', component:  DatenschutzComponent},
+  { path: 'investgrund', component:  InvestGrundComponent},
 ];
 
 @NgModule({

@@ -19,6 +19,7 @@ import {PortaitComponent} from './portait/portait.component';
 import {ProjekteComponent} from './projekte/projekte.component';
 import {ProduktTechComponent} from "./produkt-tech/produkt-tech.component";
 import {PersDienComponent} from "./pers-dien/pers-dien.component";
+import {InfraTechComponent} from "./infra-tech/infra-tech.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         PortaitComponent,
         ProjekteComponent,
         ProduktTechComponent,
-        PersDienComponent
+        PersDienComponent,
+        InfraTechComponent
     ],
     imports: [
         BrowserModule,

@@ -12,45 +12,48 @@ import {KontaktComponent} from './kontakt/kontakt.component';
 import {ImpressumComponent} from './impressum/impressum.component';
 import {HaftungsausschlussComponent} from './haftungsausschluss/haftungsausschluss.component';
 import {DatenschutzComponent} from './datenschutz/datenschutz.component';
-import { GiHeaderComponent } from './gi-header/gi-header.component';
-import { GiFooterComponent } from './gi-footer/gi-footer.component';
-import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
-import { PortaitComponent } from './portait/portait.component';
-import { ProjekteComponent } from './projekte/projekte.component';
+import {GiHeaderComponent} from './gi-header/gi-header.component';
+import {GiFooterComponent} from './gi-footer/gi-footer.component';
+import {UeberUnsComponent} from './ueber-uns/ueber-uns.component';
+import {PortaitComponent} from './portait/portait.component';
+import {ProjekteComponent} from './projekte/projekte.component';
 import {ProduktTechComponent} from "./produkt-tech/produkt-tech.component";
+import {PersDienComponent} from "./pers-dien/pers-dien.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    KontaktComponent,
-    ImpressumComponent,
-    HaftungsausschlussComponent,
-    DatenschutzComponent,
-    GiHeaderComponent,
-    GiFooterComponent,
-    UeberUnsComponent,
-    PortaitComponent,
-    ProjekteComponent,
-    ProduktTechComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        KontaktComponent,
+        ImpressumComponent,
+        HaftungsausschlussComponent,
+        DatenschutzComponent,
+        GiHeaderComponent,
+        GiFooterComponent,
+        UeberUnsComponent,
+        PortaitComponent,
+        ProjekteComponent,
+        ProduktTechComponent,
+        PersDienComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

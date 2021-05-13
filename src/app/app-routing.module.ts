@@ -9,6 +9,7 @@ import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 import {PortaitComponent} from "./portait/portait.component";
 import {ProjekteComponent} from "./projekte/projekte.component";
 import {ProduktTechComponent} from "./produkt-tech/produkt-tech.component";
+import {PersDienComponent} from "./pers-dien/pers-dien.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'impressum', component:  ImpressumComponent },
   { path: 'haftungsausschluss', component:  HaftungsausschlussComponent},
   { path: 'datenschutz', component:  DatenschutzComponent},
-  { path: 'investgrund', component:  ProduktTechComponent},
+  { path: 'prodtech', component:  ProduktTechComponent},
+  { path: 'persdien', component:  PersDienComponent},
 ];
 
 @NgModule({

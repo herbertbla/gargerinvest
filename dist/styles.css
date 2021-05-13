@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+.headline {
+  font-family: 'Source Sans Pro semibold';
+  color: #004439;
+}
+.lauftext,
+li {
+  font-family: "Source Sans Pro regular";
+}
+h3,
+h2 {
+  color: #004439;
+}
+.gspmenuitem-base,
+.gspmenuitem,
+.gspmenuitem-small,
+.gspmenuitem-active,
+.gspmenuitem-small-active {
+  color: white;
+  font-family: "Source Sans Pro regular";
+}
+.gspmenuitem,
+.gspmenuitem-active {
+  font-size: 1.5em;
+}
+.gspmenuitem-active {
+  font-weight: bold;
+}
+.gspmenuitem-small,
+.gspmenuitem-small-active {
+  font-size: 1em;
+}
+.gspmenuitem-small-active {
+  font-weight: bold;
+}
+.h-base,
+h2,
+h3 {
+  font-family: Source Sans Pro semibold;
+  color: #004137;
+}
+h2 {
+  font-size: 2vw;
+}
+h3 {
+  font-size: 1.5vw;
+}
+div {
+  font-family: Source Sans Pro regular;
+  color: #000000;
+}
+a {
+  font-family: Source Sans Pro bold;
+  color: #668d86;
+  text-decoration: none;
+}
+.gspbeigebackground {
+  background-color: #f5f4f1;
+}
+.specialcolor {
+  color: magenta;
+}
+

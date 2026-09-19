@@ -1,6 +1,8 @@
 :host {
   display: block;
   height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   overflow: hidden;
 }
 
@@ -26,6 +28,11 @@ footer {
   border: 0;
   background: transparent;
 }
+
+router-outlet {
+  display: none;
+}
+
 header, footer, main, nav, aside {
   background: #a8caf3;
   padding: 0.5rem;

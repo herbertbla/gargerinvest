@@ -7,3 +7,40 @@ a, label {
   background-color: rgb(0,65,55);
   border:0;
 }
+
+.header-nav {
+  min-height: 0;
+  margin: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 7vw 0 13vw;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.main-menu > li {
+  float: none;
+}
+
+.brand-link {
+  flex: 0 0 auto;
+  margin-left: 2rem;
+  padding: 0.75rem 0 0.75rem 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.brand-link img {
+  display: block;
+  width: clamp(150px, 18vw, 260px);
+  height: auto;
+}

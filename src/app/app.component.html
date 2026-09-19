@@ -1,13 +1,15 @@
-<body style="display: flex; flex-direction: column; min-height: 100vh">
+<div class="app-shell">
   <header class="header">
     <gi-header></gi-header>
   </header>
-  <div style="flex:4" class="lauftext">
-       <router-outlet ></router-outlet>
-  </div>
+  <main class="content lauftext">
+    <router-outlet></router-outlet>
+  </main>
 
-  <footer >
+  <footer>
     <gi-footer></gi-footer>
+    <div id="lastline">
+      <div style="color: white; margin-left: 8vw;" class="lauftext">©2026 alle Rechte vorbehalten</div>
+    </div>
   </footer>
-  <div id="lastline" style="margin-bottom: auto">   <div style="color: white; margin-left: 8vw;" class="lauftext">©2021 alle Rechte vorbehalten</div> </div>
-</body>
+</div>

@@ -1,16 +1,15 @@
-<nav class="navbar navbar-default header" style="margin-bottom: 0;margin-left: 6vw">
-  <div class="container-fluid header">
-    <ul class="nav navbar-nav header" style="padding-left: 7vw">
+<nav class="navbar navbar-default header header-nav">
+  <div class="container-fluid header header-content">
+    <ul class="nav navbar-nav header main-menu">
       <li><a href="#/home" ><span [ngClass]="getClass('home')">HOME</span></a></li>
       <li> <a href="#/ueberuns"><span [ngClass]="getClass('ueberuns')">ÜBER UNS</span></a></li>
       <li > <a href="#/portrait"><span [ngClass]="getClass('portrait')">PORTRAIT</span></a></li>
       <li><a href="#/projekte"><span [ngClass]="getClass('projekte')">PROJEKTE</span></a></li>
       <li ><a href="#/kontakt"><span [ngClass]="getClass('kontakt')">KONTAKT</span></a></li>
-
     </ul>
-    <ul class="nav navbar-nav navbar-right" style="padding-right: 7vw">
-       <li><a href="#/home"><img style="width: 40%" src="assets/images/bilder/gargerinvest_schriftzug.png"></a></li>
-    </ul>
+    <a class="brand-link" href="#/home" aria-label="Zurück zur Startseite">
+      <img src="assets/images/bilder/gargerinvest_schriftzug.png" alt="Garger Investment GmbH">
+    </a>
   </div>
 </nav>
 

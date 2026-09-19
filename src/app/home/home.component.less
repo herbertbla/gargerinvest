@@ -1,5 +1,10 @@
 @import "../app.component.less";
 
+:host {
+  display: block;
+  height: 100%;
+  min-height: 0;
+}
 
 
 .gsphomeheader {
@@ -19,7 +24,26 @@
 
 
 .gsphomebackground {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  padding-left: 40vw;
   background-image: url('../../assets/images/bilder/home.jpg');
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
+}
+
+.home-logo {
+  width: 27vw;
+}
+
+.home-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

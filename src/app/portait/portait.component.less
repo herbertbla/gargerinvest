@@ -1,12 +1,15 @@
 :host {
   display: block;
+  height: 100%;
+  background-color: rgb(245, 244, 241);
 }
 
 .portraits {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  min-height: 72vh;
+  box-sizing: border-box;
+  min-height: 100%;
   padding: 3rem clamp(1.5rem, 5vw, 5rem);
 }
 

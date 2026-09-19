@@ -1,11 +1,22 @@
 <nav class="navbar navbar-default header header-nav">
   <div class="container-fluid header header-content">
-    <ul class="nav navbar-nav header main-menu">
-      <li><a href="#/home" ><span [ngClass]="getClass('home')">HOME</span></a></li>
-      <li> <a href="#/ueberuns"><span [ngClass]="getClass('ueberuns')">ÜBER UNS</span></a></li>
-      <li > <a href="#/portrait"><span [ngClass]="getClass('portrait')">PORTRAIT</span></a></li>
-      <li><a href="#/projekte"><span [ngClass]="getClass('projekte')">PROJEKTE</span></a></li>
-      <li ><a href="#/kontakt"><span [ngClass]="getClass('kontakt')">KONTAKT</span></a></li>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Menü öffnen oder schließen"
+      aria-controls="main-menu"
+      [attr.aria-expanded]="menuOpen"
+      (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="main-menu" class="nav navbar-nav header main-menu" [class.is-open]="menuOpen">
+      <li><a href="#/home" (click)="closeMenu()"><span [ngClass]="getClass('home')">HOME</span></a></li>
+      <li><a href="#/ueberuns" (click)="closeMenu()"><span [ngClass]="getClass('ueberuns')">ÜBER UNS</span></a></li>
+      <li><a href="#/portrait" (click)="closeMenu()"><span [ngClass]="getClass('portrait')">PORTRAIT</span></a></li>
+      <li><a href="#/projekte" (click)="closeMenu()"><span [ngClass]="getClass('projekte')">PROJEKTE</span></a></li>
+      <li><a href="#/kontakt" (click)="closeMenu()"><span [ngClass]="getClass('kontakt')">KONTAKT</span></a></li>
     </ul>
     <a class="brand-link" href="#/home" aria-label="Zurück zur Startseite">
       <img src="assets/images/bilder/gargerinvest_schriftzug.png" alt="Garger Investment GmbH">

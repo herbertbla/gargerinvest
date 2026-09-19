@@ -9,9 +9,19 @@ import { Location } from "@angular/common";
 })
 export class GiHeaderComponent implements OnInit {
 
+  menuOpen = false;
+
   constructor(private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
   }
 
   getClass(menuItem: string) : string

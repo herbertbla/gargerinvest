@@ -66,7 +66,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "angular.io-example:build"
+            "buildTarget": "angular.io-example:build",
+            "host": "0.0.0.0"
           },
           "configurations": {
             "production": {

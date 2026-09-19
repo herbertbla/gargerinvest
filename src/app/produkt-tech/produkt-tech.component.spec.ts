@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InvestGrundComponent } from './ueber-uns.component';
+import { ProduktTechComponent } from './produkt-tech.component';
 
-describe('UeberUnsComponent', () => {
-  let component: InvestGrundComponent;
-  let fixture: ComponentFixture<InvestGrundComponent>;
+describe('ProduktTechComponent', () => {
+  let component: ProduktTechComponent;
+  let fixture: ComponentFixture<ProduktTechComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InvestGrundComponent ]
+      declarations: [ ProduktTechComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InvestGrundComponent);
+    fixture = TestBed.createComponent(ProduktTechComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

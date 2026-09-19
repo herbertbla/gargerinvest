@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Location} from "@angular/common";
 
 @Component({
+  standalone: false,
   selector: 'gi-footer',
   templateUrl: './gi-footer.component.html',
   styleUrls: ['./gi-footer.component.less']

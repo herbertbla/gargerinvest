@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'invest-grund',
   templateUrl: './pers-dien.component.html',
   styleUrls: ['./pers-dien.component.less']

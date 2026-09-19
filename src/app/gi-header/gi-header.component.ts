@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from "@angular/common";
 
 @Component({
+  standalone: false,
   selector: 'gi-header',
   templateUrl: './gi-header.component.html',
   styleUrls: ['./gi-header.component.less']

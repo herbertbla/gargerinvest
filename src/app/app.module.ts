@@ -1,9 +1,9 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {provideHttpClient} from '@angular/common/http';
+import {provideTranslateService, TranslatePipe} from '@ngx-translate/core';
+import {provideTranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -20,10 +20,6 @@ import {ProjekteComponent} from './projekte/projekte.component';
 import {ProduktTechComponent} from "./produkt-tech/produkt-tech.component";
 import {PersDienComponent} from "./pers-dien/pers-dien.component";
 import {InfraTechComponent} from "./infra-tech/infra-tech.component";
-
-export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
-}
 
 @NgModule({
     declarations: [
@@ -45,16 +41,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HttpClientModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
+        TranslatePipe
+    ],
+    providers: [
+        provideHttpClient(),
+        provideTranslateService({
+            loader: provideTranslateHttpLoader()
         })
     ],
-    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'invest-grund',
   templateUrl: './infra-tech.component.html',
   styleUrls: ['./infra-tech.component.less']

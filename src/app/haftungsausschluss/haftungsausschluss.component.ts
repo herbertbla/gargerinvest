@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-haftungsausschluss',
   templateUrl: './haftungsausschluss.component.html',
   styleUrls: ['./haftungsausschluss.component.less']

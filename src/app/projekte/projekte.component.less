@@ -1,5 +1,113 @@
-a, label {
-  text-decoration: none;
-  padding-right: 20px;
-  color: rgb(102,141,134);
+.project {
+  min-height: 72vh;
+  padding: 5vh 8vw 7vh;
+}
+
+.project__content {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(420px, 1.1fr);
+  gap: clamp(2.5rem, 6vw, 7rem);
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.project__description {
+  max-width: 610px;
+}
+
+.project__brand {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project__brand h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.4vw, 2.5rem);
+  letter-spacing: 0.08em;
+}
+
+.project__logo {
+  width: clamp(92px, 9vw, 125px);
+  height: auto;
+}
+
+.project__description p {
+  margin: 0 0 1.25rem;
+  line-height: 1.7;
+}
+
+.project__claim {
+  color: rgb(0, 65, 55);
+  font-weight: 600;
+}
+
+.project__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid currentColor;
+  font-weight: 600;
+}
+
+.project__founders {
+  margin: 0;
+}
+
+.project__founders-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project__founders-caption {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.project__founders-caption strong,
+.project__founders-caption span {
+  display: block;
+}
+
+.project__founders-caption strong {
+  color: rgb(0, 65, 55);
+}
+
+.project__founders-caption span {
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .project {
+    padding: 3rem 7vw 4rem;
+  }
+
+  .project__content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .project__description {
+    max-width: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .project__brand {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project__founders-caption {
+    gap: 0.5rem;
+    font-size: 0.82rem;
+  }
 }

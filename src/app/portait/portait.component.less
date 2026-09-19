@@ -1,20 +1,122 @@
-@media screen and (max-width: 500px) {
-  .portrait {
-    flex-direction: column;
-  }
-  .bernhardimage {
-    margin-left: 35vw;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+:host {
+  display: block;
+}
+
+.portraits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  min-height: 72vh;
+  padding: 3rem clamp(1.5rem, 5vw, 5rem);
+}
+
+.portrait-card {
+  align-content: start;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: clamp(70px, 10vw, 120px) minmax(0, 1fr);
+  max-width: 1100px;
+}
+
+.portrait-image,
+.portrait-placeholder {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.portrait-image img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.portrait-placeholder {
+  background: #f0f0ee;
+  border: 1px solid #deded9;
+  position: relative;
+}
+
+.placeholder-head {
+  background: #c8c8c5;
+  border-radius: 50%;
+  height: 29%;
+  position: absolute;
+  top: 20%;
+  width: 29%;
+}
+
+.placeholder-body {
+  background: #c8c8c5;
+  border-radius: 50% 50% 0 0;
+  bottom: 0;
+  height: 44%;
+  position: absolute;
+  width: 72%;
+}
+
+.portrait-details h2 {
+  font-size: clamp(1.55rem, 2vw, 2.15rem);
+  margin: 0 0 0.35rem;
+  text-transform: none;
+}
+
+.portrait-details h3 {
+  font-size: 1rem;
+  margin: 1.2rem 0 0.35rem;
+  text-transform: uppercase;
+}
+
+.portrait-details p {
+  line-height: 1.45;
+  margin: 0;
+}
+
+.portrait-details .degrees {
+  color: #555;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.portrait-details ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.portrait-details li {
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .bernhard-career {
+    display: grid;
+    gap: clamp(2rem, 5vw, 5rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media screen and (min-width: 501px) {
-  .portrait {
-    flex-direction: row;
+@media screen and (max-width: 500px) {
+  .portraits {
+    gap: 2.5rem;
+    padding: 2rem 1.25rem 3rem;
   }
-  .bernhardimage {
-    margin-top: 7vh;
-    margin-bottom: 7vh
+
+  .portrait-card {
+    gap: 1rem;
+    grid-template-columns: 50px minmax(0, 1fr);
+  }
+
+  .portrait-image,
+  .portrait-placeholder {
+    max-width: 50px;
+  }
+
+  .portrait-details h2 {
+    font-size: 1.35rem;
   }
 }

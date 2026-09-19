@@ -1,5 +1,12 @@
 @import "../app.component.less";
 
+.financing-exclusions {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1vh;
+  margin-left: 5vw;
+}
+
 
 
 
@@ -22,5 +29,17 @@
     background-size: cover;
     overflow: hidden;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gspvisionrow2,
+  .gspvisionrow3 {
+    display: none;
+  }
+
+  .financing-exclusions {
+    margin-right: 10vw;
+    margin-left: 10vw;
   }
 }

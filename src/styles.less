@@ -1,5 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
+@keyframes pixmap-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+img,
+.gsphomeheader,
+.gsphomebackground,
+.gsphaftungsausschluss,
+.gspvisionrow2,
+.gspvisionrow3,
+.gspvisionrow4,
+.gspimpressum {
+  animation: pixmap-fade-in 500ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img,
+  .gsphomeheader,
+  .gsphomebackground,
+  .gsphaftungsausschluss,
+  .gspvisionrow2,
+  .gspvisionrow3,
+  .gspvisionrow4,
+  .gspimpressum {
+    animation: none;
+  }
+}
+
 .headline {
   font-family: 'Source Sans Pro';
   color: rgb(0,68,57);

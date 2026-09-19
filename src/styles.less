@@ -43,6 +43,62 @@ img,
   font-family: "Source Sans Pro";
 }
 
+main.content {
+  line-height: 1.35;
+}
+
+main.content p,
+main.content article,
+main.content address,
+main.content li {
+  line-height: 1.35;
+}
+
+main.content p,
+main.content article:not(.portrait-card) {
+  margin-bottom: 0.65rem;
+}
+
+main.content article + br {
+  display: none;
+}
+
+main.content h2,
+main.content h3,
+main.content h4 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+main.content ul,
+main.content ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+main.content li {
+  margin-bottom: 0.15rem;
+}
+
+main.content [style*="margin-top: 5vh"],
+main.content [style*="margin-top:5vh"] {
+  margin-top: 1.5rem !important;
+}
+
+main.content [style*="margin-top: 3vh"],
+main.content [style*="margin-top:3vh"] {
+  margin-top: 1rem !important;
+}
+
+main.content [style*="margin-bottom: 3vh"],
+main.content [style*="margin-bottom:3vh"] {
+  margin-bottom: 1rem !important;
+}
+
+main.content [style*="margin-bottom: 3em"] {
+  margin-bottom: 1.5rem !important;
+}
+
 h3, h2 {
   color: rgb(0,68,57);
 }

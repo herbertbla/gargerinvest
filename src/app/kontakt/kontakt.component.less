@@ -1,9 +1,12 @@
 @import "../app.component.less";
 
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  overflow: hidden;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: rgb(245, 244, 241);
 }
 
@@ -13,30 +16,18 @@ address {
 
 .contact-map {
   box-sizing: border-box;
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 220px;
   width: 100%;
   padding: 0 10vw 3vh;
   background-color: rgb(245, 244, 241);
 }
 
 .contact-map img {
-  position: relative;
-  z-index: 1;
   display: block;
-  width: 25%;
-  height: auto;
-  cursor: zoom-in;
-  transform-origin: left bottom;
-  transition: transform 250ms ease-out;
-}
-
-.contact-map img:hover {
-  z-index: 2;
-  transform: scale(2);
-  cursor: zoom-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .contact-map img {
-    transition: none;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
 }

@@ -20,6 +20,7 @@ import {ProjekteComponent} from './projekte/projekte.component';
 import {ProduktTechComponent} from "./produkt-tech/produkt-tech.component";
 import {PersDienComponent} from "./pers-dien/pers-dien.component";
 import {InfraTechComponent} from "./infra-tech/infra-tech.component";
+import {TodoComponent} from './todo/todo.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import {InfraTechComponent} from "./infra-tech/infra-tech.component";
         ProjekteComponent,
         ProduktTechComponent,
         PersDienComponent,
-        InfraTechComponent
+        InfraTechComponent,
+        TodoComponent
     ],
     imports: [
         BrowserModule,

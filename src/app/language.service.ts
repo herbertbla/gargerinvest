@@ -1,15 +1,21 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
-  current: 'de' | 'en' = localStorage.getItem('gargerinvest-language') === 'en' ? 'en' : 'de';
+  private readonly selected = signal<'de' | 'en'>(
+    localStorage.getItem('gargerinvest-language') === 'en' ? 'en' : 'de'
+  );
+
+  get current(): 'de' | 'en' {
+    return this.selected();
+  }
 
   constructor() {
     document.documentElement.lang = this.current;
   }
 
   set(language: 'de' | 'en'): void {
-    this.current = language;
+    this.selected.set(language);
     localStorage.setItem('gargerinvest-language', language);
     document.documentElement.lang = language;
   }

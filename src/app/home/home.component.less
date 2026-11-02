@@ -41,12 +41,30 @@
 .home-logo {
   width: 27vw;
 }
+.home-logo--english { container-type: inline-size; }
 
 .home-logo img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+.home-english-slogan {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1000 / 265;
+  padding: 0 7.5%;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.1;
+}
+.home-english-slogan strong, .home-english-slogan span { display: block; color: white; white-space: nowrap; }
+.home-english-slogan strong { font-size: 5.6cqw; font-weight: 700; }
+.home-english-slogan span { margin-top: 2cqw; font-size: 5.4cqw; }
 
 @media (max-width: 767px) {
   .gsphomebackground {

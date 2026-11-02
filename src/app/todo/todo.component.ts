@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   standalone: false,
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.less']
 })
-export class TodoComponent {}
+export class TodoComponent {
+  constructor(public language: LanguageService) {}
+}

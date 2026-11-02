@@ -21,4 +21,8 @@
   .todo-table td:nth-child(4)::before { content: 'Stand / Kommentar'; }
   .todo-table td:nth-child(5)::before { content: 'Link'; }
   .todo-table td:nth-child(6)::before { content: 'Geändert am'; }
+  :host-context(html[lang='en']) .todo-table td:nth-child(2)::before { content: 'Topic'; }
+  :host-context(html[lang='en']) .todo-table td:nth-child(3)::before { content: 'Request'; }
+  :host-context(html[lang='en']) .todo-table td:nth-child(4)::before { content: 'Status / comment'; }
+  :host-context(html[lang='en']) .todo-table td:nth-child(6)::before { content: 'Updated'; }
 }

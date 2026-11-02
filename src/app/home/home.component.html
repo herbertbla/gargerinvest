@@ -1,5 +1,9 @@
 <div class="gsphomebackground gspbeigebackground">
-  <div class="home-logo">
-    <img src="../../assets/images/bilder/home_logo_slogan.png" alt="Garger Investment"/>
+  <div class="home-logo" [class.home-logo--english]="language.current === 'en'">
+    <img *ngIf="language.current === 'de'" src="../../assets/images/bilder/home_logo_slogan.png" alt="GARGER Investment GmbH – Gemeinsam in die Zukunft"/>
+    <div *ngIf="language.current === 'en'" class="home-english-slogan" role="img" aria-label="GARGER Investment GmbH – Together into the future">
+      <strong>GARGER INVESTMENT GMBH</strong>
+      <span>TOGETHER INTO THE FUTURE</span>
+    </div>
   </div>
 </div>

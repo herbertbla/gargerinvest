@@ -10,25 +10,16 @@
         />
       </div>
 
-      <p>
-        SALZSTROM ist ein in Wien gegründetes Clean Tech-Unternehmen, das innovative
-        Energiespeicherlösungen auf Basis der Natrium-Ionen-Technologie für Haushalte,
-        Gewerbe und Industrie entwickelt und vertreibt. Sie haben als erstes Unternehmen
-        einen CE-zertifizierten Natrium-Ionen-Heimspeicher auf dem europäischen Markt
-        eingeführt. Das Unternehmen verfolgt die Vision einer Energiezukunft, die nachhaltig,
-        sicher und fair für alle ist.
-      </p>
+      <p>{{ language.current === 'en' ? 'SALZSTROM is a Vienna-based clean-tech company developing and selling innovative sodium-ion energy storage solutions for households, businesses and industry. It introduced the first CE-certified sodium-ion home storage system to the European market. Its vision is an energy future that is sustainable, safe and fair for everyone.' : 'SALZSTROM ist ein in Wien gegründetes Clean Tech-Unternehmen, das innovative Energiespeicherlösungen auf Basis der Natrium-Ionen-Technologie für Haushalte, Gewerbe und Industrie entwickelt und vertreibt. Sie haben als erstes Unternehmen einen CE-zertifizierten Natrium-Ionen-Heimspeicher auf dem europäischen Markt eingeführt. Das Unternehmen verfolgt die Vision einer Energiezukunft, die nachhaltig, sicher und fair für alle ist.' }}</p>
 
-      <p class="project__claim">Ohne Lithium. Ohne Kobalt. Ohne Nickel.</p>
+      <p class="project__claim">{{ language.current === 'en' ? 'No lithium. No cobalt. No nickel.' : 'Ohne Lithium. Ohne Kobalt. Ohne Nickel.' }}</p>
 
       <a
         class="project__link"
         href="https://www.salzstrom.com/"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        Zur Website von SALZSTROM
-      </a>
+      >{{ language.current === 'en' ? 'Visit the SALZSTROM website' : 'Zur Website von SALZSTROM' }}</a>
     </div>
 
     <figure class="project__founders">

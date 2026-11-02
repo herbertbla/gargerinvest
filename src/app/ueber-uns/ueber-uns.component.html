@@ -1,36 +1,32 @@
 <div   style="display: flex; flex-direction: column;margin-top: 3vh" >
   <div style="display: flex; flex-direction: column; margin-right: 20vw; margin-left: 10vw; margin-bottom: 3vh">
     <h3>VISION</h3>
-    <div>
-      Die GARGER Investment GmbH beteiligt sich an kleinen und mittelständischen Unternehmen in Österreich. Dabei suchen wir nicht nur nach
-  einer passiven Beteiligung, sondern wollen durch unsere Erfahrung zum Erfolg des Unternehmens beitragen. Wir stehen für langfristige
-  Verantwortung.
-    </div>
+    <div>{{ language.current === 'en' ? 'GARGER Investment GmbH invests in small and medium-sized companies in Austria. We seek more than a passive stake: we use our experience to contribute to each company’s success. We stand for long-term responsibility.' : 'Die GARGER Investment GmbH beteiligt sich an kleinen und mittelständischen Unternehmen in Österreich. Dabei suchen wir nicht nur nach einer passiven Beteiligung, sondern wollen durch unsere Erfahrung zum Erfolg des Unternehmens beitragen. Wir stehen für langfristige Verantwortung.' }}</div>
   </div>
   <div  class="gspbeigebackground">
     <div style="display: flex; flex-direction: row;">
       <div style="flex:1;">
         <div  style="display: flex; flex-direction: column;margin-right: 10vw; margin-left: 10vw ">
-          <h3 style="margin-top: 5vh">INVESTMENTGRUNDSÄTZE</h3>
-          <h4>BRANCHEN</h4>
+          <h3 style="margin-top: 5vh">{{ language.current === 'en' ? 'INVESTMENT PRINCIPLES' : 'INVESTMENTGRUNDSÄTZE' }}</h3>
+          <h4>{{ language.current === 'en' ? 'SECTORS' : 'BRANCHEN' }}</h4>
           <ul style="margin-top: 0">
-            <a href="#/prodtech" ><li >Produktionstechnologien</li></a>
-            <a href="#/persdien" ><li >Persönliche Dienstleistungen</li></a>
-            <a href="#/infratech" ><li >Infrastrukturtechnologien</li></a>
+            <a href="#/prodtech" ><li >{{ language.current === 'en' ? 'Production technologies' : 'Produktionstechnologien' }}</li></a>
+            <a href="#/persdien" ><li >{{ language.current === 'en' ? 'Personal services' : 'Persönliche Dienstleistungen' }}</li></a>
+            <a href="#/infratech" ><li >{{ language.current === 'en' ? 'Infrastructure technologies' : 'Infrastrukturtechnologien' }}</li></a>
           </ul>
 
-          <h4>BETEILIGUNGSKAPITAL</h4>
+          <h4>{{ language.current === 'en' ? 'INVESTMENT CAPITAL' : 'BETEILIGUNGSKAPITAL' }}</h4>
           <ul style="margin-top: 0">
-            <li>Eigenkapital € 750.000 - 1 Mio.</li>
-            <li>Restliche Kaufpreisfinanzierung mit sonstigen Partnern und Fremdkapital durch Kreditinstitute</li>
+            <li>{{ language.current === 'en' ? 'Equity capital of €750,000 to €1 million' : 'Eigenkapital € 750.000 - 1 Mio.' }}</li>
+            <li>{{ language.current === 'en' ? 'Remaining purchase price financed with other partners and debt from banks' : 'Restliche Kaufpreisfinanzierung mit sonstigen Partnern und Fremdkapital durch Kreditinstitute' }}</li>
           </ul>
 
-          <h4>IDEALTYPISCHES TARGET</h4>
+          <h4>{{ language.current === 'en' ? 'IDEAL TARGET' : 'IDEALTYPISCHES TARGET' }}</h4>
           <ul style="margin-top: 0">
-            <li>Umsatz zwischen € 5 Mio. und 10 Mio.</li>
-            <li>Mittelständisches Unternehmen aus Hotellerie, Gewerbe und Industrie</li>
-            <li>sanierungsbedürftige Unternehmen</li>
-            <li>Start-up-Unternehmen</li>
+            <li>{{ language.current === 'en' ? 'Revenue between €5 million and €10 million' : 'Umsatz zwischen € 5 Mio. und 10 Mio.' }}</li>
+            <li>{{ language.current === 'en' ? 'Medium-sized company in hospitality, trade or industry' : 'Mittelständisches Unternehmen aus Hotellerie, Gewerbe und Industrie' }}</li>
+            <li>{{ language.current === 'en' ? 'Companies requiring restructuring' : 'sanierungsbedürftige Unternehmen' }}</li>
+            <li>{{ language.current === 'en' ? 'Start-up companies' : 'Start-up-Unternehmen' }}</li>
           </ul>
         </div>
       </div>
@@ -41,25 +37,25 @@
     </div>
     <div style="flex:1;">
       <div class="financing-exclusions">
-      <h3 >FINANZIERUNGSAUSSCHLÜSSE</h3>
-      <h4>BRANCHENAUSSCHLÜSSE</h4>
+      <h3 >{{ language.current === 'en' ? 'INVESTMENT EXCLUSIONS' : 'FINANZIERUNGSAUSSCHLÜSSE' }}</h3>
+      <h4>{{ language.current === 'en' ? 'SECTOR EXCLUSIONS' : 'BRANCHENAUSSCHLÜSSE' }}</h4>
       <ul style="margin-top: 0">
-        <li>Immobilien</li>
-        <li>Forschungsintensive High Tech-Unternehmen (mit dem Ausstieg der alten Gesellschafter oder einzelner Schlüsselarbeitskräfte geht das überwiegende Know-how verloren)</li>
-        <li>Branchen mit hohen Haftungen aus Gewährleistung und Schadenersatz aus dem operativen Geschäft</li>
+        <li>{{ language.current === 'en' ? 'Real estate' : 'Immobilien' }}</li>
+        <li>{{ language.current === 'en' ? 'Research-intensive high-tech companies where the departure of former owners or key staff would result in the loss of essential know-how' : 'Forschungsintensive High Tech-Unternehmen (mit dem Ausstieg der alten Gesellschafter oder einzelner Schlüsselarbeitskräfte geht das überwiegende Know-how verloren)' }}</li>
+        <li>{{ language.current === 'en' ? 'Sectors with high warranty and liability exposure from operations' : 'Branchen mit hohen Haftungen aus Gewährleistung und Schadenersatz aus dem operativen Geschäft' }}</li>
       </ul>
 
-      <h4>STRUKTURELLE FINANZIERUNGSAUSSCHLÜSSE</h4>
+      <h4>{{ language.current === 'en' ? 'STRUCTURAL EXCLUSIONS' : 'STRUKTURELLE FINANZIERUNGSAUSSCHLÜSSE' }}</h4>
       <ul style="margin-top: 0">
-        <li>Unfreundliche Firmenübernahmen ohne Einbindung der 2. Managementebene</li>
-        <li>Zahlung eines überhöhten Kaufpreises, um unbedingt den Zuschlag zu erhalten</li>
-        <li>Bloße Kofinanzierung als Junior Partner ohne persönlichen Arbeitseinsatz</li>
+        <li>{{ language.current === 'en' ? 'Hostile takeovers without involving the second management level' : 'Unfreundliche Firmenübernahmen ohne Einbindung der 2. Managementebene' }}</li>
+        <li>{{ language.current === 'en' ? 'Paying an excessive purchase price merely to secure a deal' : 'Zahlung eines überhöhten Kaufpreises, um unbedingt den Zuschlag zu erhalten' }}</li>
+        <li>{{ language.current === 'en' ? 'Merely co-financing as a junior partner without personal involvement' : 'Bloße Kofinanzierung als Junior Partner ohne persönlichen Arbeitseinsatz' }}</li>
       </ul>
 
-      <h4>UNTERNEHMENSBEZOGENE FINANZIERUNGSAUSSCHLÜSSE</h4>
+      <h4>{{ language.current === 'en' ? 'COMPANY-RELATED EXCLUSIONS' : 'UNTERNEHMENSBEZOGENE FINANZIERUNGSAUSSCHLÜSSE' }}</h4>
       <ul style="margin-top: 0; margin-bottom: 3em">
-        <li>Vertriebs- und Kundenstruktur personell zu stark auf die ausscheidenden Altgesellschafter (bisherige Inhaber) konzentriert</li>
-        <li>Stark forschungs- und marketingintensive Unternehmen</li>
+        <li>{{ language.current === 'en' ? 'Sales and customer relationships too dependent on departing former owners' : 'Vertriebs- und Kundenstruktur personell zu stark auf die ausscheidenden Altgesellschafter (bisherige Inhaber) konzentriert' }}</li>
+        <li>{{ language.current === 'en' ? 'Companies with exceptionally high research or marketing needs' : 'Stark forschungs- und marketingintensive Unternehmen' }}</li>
       </ul>
     </div>
     </div>

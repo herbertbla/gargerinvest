@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from "@angular/common";
+import { LanguageService } from '../language.service';
 
 @Component({
   standalone: false,
@@ -11,7 +12,7 @@ export class GiHeaderComponent implements OnInit {
 
   menuOpen = false;
 
-  constructor(private location: Location) { }
+  constructor(private location: Location, public language: LanguageService) { }
 
   ngOnInit(): void {
   }

@@ -3,14 +3,14 @@
     <div style="display: flex; flex-direction: row;">
       <div style="flex:1;">
         <div  style="display: flex; flex-direction: column;margin-right: 10vw; margin-left: 10vw ">
-          <h3 style="margin-top: 5vh">INVESTMENTGRUNDSÄTZE</h3>
-            <h4>PRODUKTIONSTECHNOLOGIEN</h4>
+          <h3 style="margin-top: 5vh">{{ language.current === 'en' ? 'INVESTMENT PRINCIPLES' : 'INVESTMENTGRUNDSÄTZE' }}</h3>
+            <h4>{{ language.current === 'en' ? 'PRODUCTION TECHNOLOGIES' : 'PRODUKTIONSTECHNOLOGIEN' }}</h4>
           <ul>
-            <li>Maschinen- und Fahrzeugbau</li>
-        <li>Metall- und Kunststoffindustrie</li>
-        <li>Automationstechnik, Mess- und Regeltechnik</li>
-        <li>Elektrotechnik und Elektronik</li>
-        <li>Werkstofftechnologie</li>
+            <li>{{ language.current === 'en' ? 'Mechanical and vehicle engineering' : 'Maschinen- und Fahrzeugbau' }}</li>
+        <li>{{ language.current === 'en' ? 'Metal and plastics industry' : 'Metall- und Kunststoffindustrie' }}</li>
+        <li>{{ language.current === 'en' ? 'Automation, measurement and control technology' : 'Automationstechnik, Mess- und Regeltechnik' }}</li>
+        <li>{{ language.current === 'en' ? 'Electrical engineering and electronics' : 'Elektrotechnik und Elektronik' }}</li>
+        <li>{{ language.current === 'en' ? 'Materials technology' : 'Werkstofftechnologie' }}</li>
           </ul>
 
         </div>

@@ -1,6 +1,6 @@
 <div class="impressum-page">
   <div class="impressum-copy">
-    <h2 style="">IMPRESSUM</h2>
+    <h2>{{ language.current === 'en' ? 'Legal notice' : 'IMPRESSUM' }}</h2>
     GARGER Investment GmbH<br/>
 Biberstraße 22, A-1010 Wien<br/>
      <a href="tel:+4313199470" style="text-decoration: none">Tel: +43-1-319 94 70,</a><br/>
@@ -9,11 +9,11 @@ Biberstraße 22, A-1010 Wien<br/>
       <a href="https://www.gargerinvest.at">https://www.gargerinvest.at </a><br>
       <br/>
 
-      Design Website: Claudia Marschall<br/>
+      {{ language.current === 'en' ? 'Website design' : 'Design Website' }}: Claudia Marschall<br/>
       <a href="mailto:office(AT)claudiamarschall.at">office(AT)claudiamarschall.at </a><br>
       <a href="https://www.gargerinvest.at">https://www.claudiamarschall.at </a><br><br/>
 
-      Programmierung: Simon Garger<br/>
+
       <p class="impressum-version">V2.0-RC</p>
   </div>
   <div class="gspimpressum"></div>

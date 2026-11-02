@@ -3,15 +3,15 @@
     <div style="display: flex; flex-direction: row;">
       <div style="flex:1;">
         <div  style="display: flex; flex-direction: column;margin-right: 10vw; margin-left: 10vw ">
-          <h3 style="margin-top: 5vh">INVESTMENTGRUNDSÄTZE</h3>
-            <h4>INFRASTRUKTURTECHNOLOGIEN</h4>
+          <h3 style="margin-top: 5vh">{{ language.current === 'en' ? 'INVESTMENT PRINCIPLES' : 'INVESTMENTGRUNDSÄTZE' }}</h3>
+            <h4>{{ language.current === 'en' ? 'INFRASTRUCTURE TECHNOLOGIES' : 'INFRASTRUKTURTECHNOLOGIEN' }}</h4>
           <ul>
-            <li>Verkehrstechnik, Fahrzeugbau und Zulieferindustrie</li>
-            <li>Energietechnik (insb. alternative Energieformen)</li>
-            <li>Informations- und Kommunikationstechnologie</li>
-            <li>Energie und Verkehr</li>
-            <li>Wasserwirtschaft, Umwelttechnologie</li>
-            <li>Recycling und Müllentsorgung</li>
+            <li>{{ language.current === 'en' ? 'Transport technology, vehicle engineering and suppliers' : 'Verkehrstechnik, Fahrzeugbau und Zulieferindustrie' }}</li>
+            <li>{{ language.current === 'en' ? 'Energy technology (especially alternative energy sources)' : 'Energietechnik (insb. alternative Energieformen)' }}</li>
+            <li>{{ language.current === 'en' ? 'Information and communications technology' : 'Informations- und Kommunikationstechnologie' }}</li>
+            <li>{{ language.current === 'en' ? 'Energy and transport' : 'Energie und Verkehr' }}</li>
+            <li>{{ language.current === 'en' ? 'Water management and environmental technology' : 'Wasserwirtschaft, Umwelttechnologie' }}</li>
+            <li>{{ language.current === 'en' ? 'Recycling and waste disposal' : 'Recycling und Müllentsorgung' }}</li>
           </ul>
 
         </div>

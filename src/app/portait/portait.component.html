@@ -7,47 +7,24 @@
       <h2 class="headline">MMag. Dr. Bernhard Garger</h2>
       <div class="bernhard-career">
         <div>
-          <h3>Curriculum Vitae</h3>
+          <h3>{{ language.current === 'en' ? 'Curriculum vitae' : 'Curriculum Vitae' }}</h3>
           <ul>
-            <li>Studium der Rechtswissenschaften und der Betriebswirtschaft</li>
-            <li>Studium Hochschule St. Gallen (Schweiz)</li>
-            <li>Rechtsanwaltsausbildung</li>
-            <li>Selbständiger Rechtsanwalt in Wien</li>
+            <li>{{ language.current === 'en' ? 'Studied law and business administration' : 'Studium der Rechtswissenschaften und der Betriebswirtschaft' }}</li>
+            <li>{{ language.current === 'en' ? 'Studied at the University of St. Gallen (Switzerland)' : 'Studium Hochschule St. Gallen (Schweiz)' }}</li>
+            <li>{{ language.current === 'en' ? 'Legal training' : 'Rechtsanwaltsausbildung' }}</li>
+            <li>{{ language.current === 'en' ? 'Independent lawyer in Vienna' : 'Selbständiger Rechtsanwalt in Wien' }}</li>
           </ul>
         </div>
 
         <div>
-          <h3>Berufserfahrung</h3>
+          <h3>{{ language.current === 'en' ? 'Professional experience' : 'Berufserfahrung' }}</h3>
           <ul>
-            <li>Laufende Betreuung von Unternehmenstransaktionen und -akquisitionen aus diversen Branchen</li>
-            <li>Konzerninterne und -externe Umstrukturierungen und Umgründungen</li>
-            <li>Restrukturierung von Unternehmen aus verschiedenen Branchen</li>
+            <li>{{ language.current === 'en' ? 'Ongoing advice on corporate transactions and acquisitions across various sectors' : 'Laufende Betreuung von Unternehmenstransaktionen und -akquisitionen aus diversen Branchen' }}</li>
+            <li>{{ language.current === 'en' ? 'Internal and external group restructurings and reorganisations' : 'Konzerninterne und -externe Umstrukturierungen und Umgründungen' }}</li>
+            <li>{{ language.current === 'en' ? 'Restructuring companies across various sectors' : 'Restrukturierung von Unternehmen aus verschiedenen Branchen' }}</li>
           </ul>
         </div>
       </div>
-    </div>
-  </article>
-
-  <article class="portrait-card">
-    <div class="portrait-placeholder" role="img" aria-label="Portrait von Anna Garger folgt">
-      <span class="placeholder-head"></span>
-      <span class="placeholder-body"></span>
-    </div>
-    <div class="portrait-details">
-      <h2 class="headline">Anna Garger</h2>
-      <p class="degrees">BSc MSc MSc</p>
-      <p>Fakultät für Lebenswissenschaften, Department für Neurowissenschaften und Entwicklungsbiologie</p>
-    </div>
-  </article>
-
-  <article class="portrait-card">
-    <div class="portrait-placeholder" role="img" aria-label="Portrait von Simon Garger folgt">
-      <span class="placeholder-head"></span>
-      <span class="placeholder-body"></span>
-    </div>
-    <div class="portrait-details">
-      <h2 class="headline">Simon Garger</h2>
-      <p class="degrees">BA MSc</p>
     </div>
   </article>
 </section>

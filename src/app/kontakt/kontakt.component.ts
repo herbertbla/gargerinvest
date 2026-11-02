@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   standalone: false,
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KontaktComponent implements OnInit {
 
-  constructor() { }
+  constructor(public language: LanguageService) { }
 
   ngOnInit() {
   }

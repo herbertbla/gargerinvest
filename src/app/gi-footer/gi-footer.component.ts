@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Location} from "@angular/common";
+import { LanguageService } from '../language.service';
 
 @Component({
   standalone: false,
@@ -9,7 +10,7 @@ import {Location} from "@angular/common";
 })
 export class GiFooterComponent implements OnInit {
 
-  constructor(private location: Location) { }
+  constructor(private location: Location, public language: LanguageService) { }
 
   ngOnInit(): void {
   }

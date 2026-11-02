@@ -1,33 +1,7 @@
-@import "../app.component.less";
-
-:host {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: rgb(245, 244, 241);
-}
-
-address {
-  font-style: normal;
-}
-
-.contact-map {
-  box-sizing: border-box;
-  display: flex;
-  flex: 1 1 auto;
-  min-height: 220px;
-  width: 100%;
-  padding: 0 10vw 3vh;
-  background-color: rgb(245, 244, 241);
-}
-
-.contact-map img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: left top;
-}
+:host { display: block; min-height: 100%; background: #fff; }
+.contact-content { max-width: 900px; margin: 0 auto; padding: 3rem 5vw; }
+h1, h2 { color: rgb(0, 68, 57); }
+h2 { margin-top: 2rem; }
+address { font-style: normal; line-height: 1.6; margin: 2rem 0; }
+.map-link { display: block; margin-top: 2rem; }
+.map-link img { display: block; width: 100%; height: auto; }

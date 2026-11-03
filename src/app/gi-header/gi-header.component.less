@@ -105,13 +105,10 @@ a, label {
   }
 }
 .language-switch { display: flex; align-items: center; gap: .35rem; color: white; margin-right: 1rem; white-space: nowrap; } .language-switch button { border: 0; background: none; color: white; opacity: .65; cursor: pointer; padding: .25rem; } .language-switch button[aria-pressed="true"] { opacity: 1; font-weight: bold; text-decoration: underline; }
-.todo-button { flex: 0 0 auto; margin-left: 1rem; padding: .4rem .7rem; border: 1px solid rgba(255,255,255,.7); border-radius: 4px; color: white; font-size: .85rem; font-weight: bold; text-decoration: none; }
-.todo-button:hover, .todo-button:focus-visible, .todo-button[aria-current="page"] { background: white; color: rgb(0,65,55); }
 @media (max-width: 767px) {
   .header-content { gap: .5rem; }
   .brand-link { margin-left: auto; }
   .brand-link img { width: clamp(110px, 30vw, 160px); }
   .language-switch { margin: 0; }
-  .todo-button { order: 2; margin: 0; }
   .main-menu { order: 3; }
 }

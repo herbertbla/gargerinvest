@@ -11,7 +11,6 @@ import {ProjekteComponent} from "./projekte/projekte.component";
 import {ProduktTechComponent} from "./produkt-tech/produkt-tech.component";
 import {PersDienComponent} from "./pers-dien/pers-dien.component";
 import {InfraTechComponent} from "./infra-tech/infra-tech.component";
-import {TodoComponent} from './todo/todo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,7 +25,7 @@ const routes: Routes = [
   { path: 'prodtech', component:  ProduktTechComponent},
   { path: 'persdien', component:  PersDienComponent},
   { path: 'infratech', component:  InfraTechComponent},
-  { path: 'todo', component: TodoComponent },
+  { path: '**', redirectTo: '/home' },
 ];
 
 @NgModule({
